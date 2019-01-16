@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ENvironmentSet/objectel.git"
+    "url": "git+https://github.com/objectel/objectel.git"
   },
   "author": "ENvironmentSet <herryseo1@gmail.com> (https://github.com/ENvironmentSet)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ENvironmentSet/objectel/issues"
+    "url": "https://github.com/objectel/objectel/issues"
   },
-  "homepage": "https://github.com/ENvironmentSet/objectel#readme",
+  "homepage": "https://github.com/objectel/objectel#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
