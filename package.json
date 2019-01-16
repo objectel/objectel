@@ -6,7 +6,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build:examples": "lerna run --scope @examples/* build --stream",
-    "build:packages": "lerna run --scope @objectel/* build --stream",
+    "build:packages:development": "lerna run --scope @objectel/* build:development --stream",
+    "build:packages:production": "lerna run --scope @objectel/* build:production --stream",
     "build": "lerna run build --stream",
     "clear": "lerna run clear --stream"
   },
