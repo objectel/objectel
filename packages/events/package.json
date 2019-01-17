@@ -1,0 +1,48 @@
+{
+  "name": "@objectel/events",
+  "version": "1.0.0",
+  "description": "provides objectel event helper",
+  "index": "index.js",
+  "main": "build/lib/events.js",
+  "unpkg": "build/dist/events.js",
+  "module": "build/es/events.js",
+  "keywords": [
+    "objectel",
+    "reactive programming"
+  ],
+  "scripts": {
+    "env:development": "cross-env NODE_ENV=development",
+    "env:production": "cross-env NODE_ENV=production",
+    "build": "rollup -c",
+    "build:development": "npm run env:development -- npm run build",
+    "build:production": "npm run env:production -- npm run build",
+    "clear": "rimraf build",
+    "release": "npm run clear -- npm run build:production -- npm run publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/objectel/objectel/issues.git"
+  },
+  "author": "ENvironmentSet <herryseo1@gmail.com> (https://github.com/ENvironmentSet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/objectel/objectel/issues"
+  },
+  "homepage": "https://github.com/objectel/objectel/issues#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "callbag-filter": "^1.0.1",
+    "callbag-map": "^1.0.1",
+    "callbag-pipe": "^1.1.1",
+    "objectel": "^0.3.1"
+  }
+}
