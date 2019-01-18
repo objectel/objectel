@@ -1,9 +1,9 @@
 # objectel
 
-![LICENSE](https://img.shields.io/npm/l/objectel.svg)
-![DOWNLOADS](https://img.shields.io/npm/dt/objectel.svg)
-![GITHUB-STARS](https://img.shields.io/github/stars/ENvironmentSet/objectel.svg)
-![LAST-COMMIT](https://img.shields.io/github/last-commit/ENvironmentSet/objectel.svg)
+![LICENSE](https://img.shields.io/npm/l/@objectel/objectel.svg)
+![DOWNLOADS](https://img.shields.io/npm/dt/@objectel/objectel.svg)
+![GITHUB-STARS](https://img.shields.io/github/stars/objectel/objectel.svg)
+![LAST-COMMIT](https://img.shields.io/github/last-commit/objectel/objectel.svg)
 
 objectel is library which provides highly-abstracted object in order to resolve hierarchical problem via composition
 
