@@ -1,11 +1,11 @@
-import { once } from './utils';
+import { once, noop } from './utils';
 import merge from 'callbag-merge';
 import pipe from 'callbag-pipe';
 import map from 'callbag-map'
 
-export default function component(propsToModel, modelToResult, eventMap = {}) {
+export default function component(propsToModel = noop, modelToResult, eventMap = {}) {
   return props => event$ => {
-    const eventHandler = (start, sink) => {
+    const eventHandler = event$ => (start, sink) => {
       if (start !== 0) return;
 
       event$(0, (t, d) => {
@@ -22,9 +22,17 @@ export default function component(propsToModel, modelToResult, eventMap = {}) {
     const initModel = propsToModel(props);
     let prevModel = initModel;
 
-    return pipe(
-      merge(eventHandler, once(initModel)),
-      map(model => modelToResult(model, props)),
-    );
+    if (prevModel === undefined) {
+      return pipe(
+        event$,
+        eventHandler,
+        map(model => modelToResult(model, props)),
+      );
+    } else {
+      return pipe(
+        merge(eventHandler(event$), once(initModel)),
+        map(model => modelToResult(model, props)),
+      );
+    }
   };
 };
