@@ -3,3 +3,4 @@ export { default as reduce } from './reduce';
 export { default as flatMap } from './flatMap';
 export { default as toInputOperator } from './toInputOperator';
 export { default as toOutputOperator } from './toOutputOperator';
+export { default as toEchshpere } from './toEcoshpere';
