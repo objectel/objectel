@@ -1,6 +1,6 @@
 {
   "name": "@objectel/operators",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "provides operators for objectel",
   "index": "index.js",
   "main": "build/lib/operators.js",
