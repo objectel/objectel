@@ -5,6 +5,6 @@ export default function toOutputOperator(component) {
     const children = Array.isArray(props.children) ? props.children : [];
     const input$ = merge(...children.map(element => element(childrenInput$)));
 
-    return component(input$);
+    return component(props)(input$);
   };
 };
