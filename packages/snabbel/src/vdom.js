@@ -15,10 +15,9 @@ export const VDOM = ({ modules = [], container = document.createDocumentFragment
   const patch = init(modules);
   let vdom = container;
 
-  children.forEach(element => Emit$(element(Listen$)));
-
   return event$ => {
     Emit$(event$);
+    children.forEach(element => Emit$(element(Listen$)));
 
     return createEventHandlers({
       [patchVnode]: vnode => {
