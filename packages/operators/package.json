@@ -40,6 +40,7 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
+    "@objectel/objectel": "^0.3.1",
     "callbag-flatten": "^1.2.0",
     "callbag-map": "^1.0.1",
     "callbag-merge": "^3.1.0",
