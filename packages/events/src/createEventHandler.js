@@ -1,7 +1,7 @@
 import * as Ol from 'objectel';
 import pipe from 'callbag-pipe';
 import map from 'callbag-map';
-import id from '@packages/id';
+import { id } from './utils';
 
 export default function createEventHandler(type, handler = id) {
   return event$ => pipe(
