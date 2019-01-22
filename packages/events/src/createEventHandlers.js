@@ -1,7 +1,7 @@
 import pipe from 'callbag-pipe';
 import map from 'callbag-map';
 import filter from 'callbag-filter';
-import id from '@packages/id';
+import { id } from './utils';
 
 export default function createEventHandlers(eventHandlerMap) {
   return event$ => pipe(

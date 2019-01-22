@@ -1,6 +1,6 @@
 {
   "name": "@objectel/events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "provides objectel event helper",
   "index": "index.js",
   "main": "build/lib/events.js",
