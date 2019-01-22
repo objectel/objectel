@@ -1,5 +1,5 @@
 import * as Ol from 'objectel';
-import id from '@packages/id';
+import { id } from './utils';
 
 export default function createEventCreator(type, payloadCreator = id, metaCreator = id) {
   const eventCreator = (payloadSource, metaSource) =>
